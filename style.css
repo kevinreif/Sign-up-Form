@@ -1,6 +1,12 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("fonts/Norse-Bold.otf");
+}
+
 body {
     padding: 0%;
     margin: 0%;
+    font-family: "Arial";
 }
 
 .content {
@@ -18,7 +24,6 @@ body {
 }
 
 .banner {
-    
     display: flex;
     position: relative;
     color: white;
@@ -29,23 +34,21 @@ body {
     top: 15%;
     height: 100px;
     width: 100%;
-    
-    
+    font-family: "Norse Bold";
+    font-size: 34px;
 }
 
-.banner h1 {
-    
-    
-}
-
-h2 {
+.logo {
+    height: 80px;
+    padding-right: 20px;
 
 }
+
 
 .right-content {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(236, 235, 235);
     width: 60vw;
     height: 100vh;
 }
@@ -60,6 +63,7 @@ h2 {
 }
 
 .form-div {  
+    background-color: white;
     box-shadow: 0 10px 20px 4px rgba(0, 0, 0, .1);
 }
 
@@ -71,6 +75,7 @@ h2 {
     display: flex;
     background-color: white;
     padding: 30px;
+    font-size: smaller;
     
     
     
@@ -98,14 +103,14 @@ h2 {
 }
 
 input:focus + label{
-    color: blue;
+    color: #409BBE;
     
 }
 
 input:focus{
     border: none;
     outline-width: 0;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #409BBE;
     
 }
 
@@ -114,7 +119,17 @@ input:focus{
 }
 
 .submit-button input {
-    color: blue;
+    color: white;
+    background-color: #409BBE;
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px 4px rgba(0, 0, 0, .1);
+    font-size: 18px;
 }
 
+.signup a{
+    text-decoration: none;
+    color: #409BBE;
+}
 
